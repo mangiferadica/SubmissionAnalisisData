@@ -20,3 +20,15 @@ Dashboard ini merupakan proyek analisis data kualitas udara di stasiun Guanyuan.
 conda create --name airquality-ds python=3.9
 conda activate airquality-ds
 pip install -r requirements.txt
+
+## Setup Enviroment - Shell/Terminal
+```bash
+mkdir air_quality_analysis
+cd air_quality_analysis
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+
+## Run Streamlit App
+```bash
+streamlit run dashboard.py
