@@ -71,7 +71,7 @@ st.divider()
 
 # --- MENJAWAB PERTANYAAN 1: TREN BULANAN ---
 st.subheader(f"1. Tren Konsentrasi {parameter} Rata-rata Bulanan")
-monthly_df = main_df.resample(rule='M', on='datetime').agg({
+monthly_df = main_df.resample(rule='ME', on='datetime').agg({
     parameter: "mean"
 }).reset_index()
 
